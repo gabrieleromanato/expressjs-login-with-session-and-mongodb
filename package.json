@@ -1,0 +1,26 @@
+{
+  "name": "expressjs-login-mongodb-session",
+  "version": "1.0.0",
+  "description": "Simple login with database and session",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "expressjs",
+    "mongodb",
+    "login",
+    "session"
+  ],
+  "author": "Gabriele Romanato",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-session": "^1.4.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "mongodb": "^3.4.1",
+    "validator": "^12.1.0"
+  }
+}

@@ -1,0 +1,40 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #fff;
+    width: 100%;
+}
+
+form *:focus,
+form *:active,
+:hover,
+:active {
+    outline-style: none !important;
+    box-shadow: none !important;
+}
+
+#app {
+   padding: 0 1em;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   background-color: #ccc; 
+}
+
+#login-form, #main {
+    padding: 20px;
+    background: #fff;
+}
+
+#login-form {
+    width: 400px;
+}
+
+@media screen and (max-width: 640px) {
+    #login-form {
+        width: auto;
+    }
+}

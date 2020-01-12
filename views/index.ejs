@@ -1,0 +1,29 @@
+<%- include('header') %>
+
+<% if(user) { %>
+
+<section id="main" class="text-center">
+    <h1>Welcome, <%= user.email %></h1>
+    <p class="mt-5">
+        <a href="/logout" class="btn btn-primary">Logout</a>
+    </p>
+</section>
+
+<% } else { %>
+
+<form action="" id="login-form" method="post" novalidate>
+    <div class="form-group">
+        <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+    </div>
+    <p>
+        <input type="submit" class="btn btn-primary btn-block" value="Login">
+    </p>
+</form>
+
+<% } %>
+
+
+<%- include('footer') %>
